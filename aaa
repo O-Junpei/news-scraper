@@ -1,0 +1,35 @@
+
+  # Delete Duplication
+  new_contents = []
+
+  contents.each do |content|
+    is_contain = false
+    new_contents.each do |new_content|
+      puts 'eee'
+      puts new_content
+      is_contain = content[:title].eql?(new_content[:title])
+      puts is_contain
+    end
+    new_contents.push(content) unless is_contain
+  end
+
+  puts '###'
+  puts new_contents[0]
+  puts '###'
+
+  # Sort
+  puts '######r'
+  l = new_contents.length
+  for i in 0..l-1 do
+    puts i
+    puts new_contents[i][:pubDate]
+  end
+
+  # Save
+  open(file_name, 'w') do |io|
+    if new_contents.size > 100
+      JSON.dump(new_contents.slice(100), io)
+    else
+      JSON.dump(new_contents, io)
+    end
+  end
