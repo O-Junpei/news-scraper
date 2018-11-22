@@ -4,10 +4,13 @@ require 'rss'
 require 'json'
 require 'uri'
 require 'time'
+require 'csv'
 
 def parser(name)
-  file_name = name + '.json'
+  json_name = name + '.json'
+  csv_name = name + '.csv'
   url = 'https://news.google.com/news/rss/search/section/q/' + URI.escape(name) + '?&ned=jp&gl=JP&hl=ja'
+
   # Pull
   begin
     rss = RSS::Parser.parse(url)
@@ -17,14 +20,14 @@ def parser(name)
   end
 
   # File Check
-  unless File.exist?(file_name)
+  unless File.exist?(json_name)
     open(name + '.json', 'w') do |io|
       JSON.dump([], io)
     end
   end
 
   # Read Local Json
-  contents = open(file_name) do |io|
+  contents = open(json_name) do |io|
     JSON.load(io)
   end
 
@@ -39,27 +42,28 @@ def parser(name)
   end
 
   # Delete Duplication
-  new_contents = []
-  (0..contents.size - 1).each do |i|
-    is_contain = false
-    (0..new_contents.size - 1).each do |j|
-      is_contain = true if contents[i]['title'].eql? new_contents[j]['title']
-    end
-    new_contents.push(contents[i]) unless is_contain
-  end
-
   contents = contents.uniq
 
   # Sort
-  new_contents = new_contents.sort_by { |h| h['pubDate'] }.reverse
-  new_contents = contents.uniq.sort_by { |h| h['pubDate'] }.reverse
+  contents = contents.sort_by {|h| h['pubDate']}.reverse
 
   # Save
-  open(file_name, 'w') do |io|
-    JSON.dump(new_contents, io)
+  open(json_name, 'w') do |io|
+    JSON.dump(contents, io)
   end
 
   # Export CSV
+  #csv = CSV.open('test.csv', 'w')
+  # contents.each do |content|
+    #csv.puts content['pubDate'] + ',' + content['title'] + ',' + content['link']
+  #end
+  #csv.close
+
+  CSV.open(csv_name,'w') do |csv| # output to csv file
+    contents.each do |content|
+      csv << [content['pubDate'], content['title'], content['link'] ]
+    end
+  end
 
 end
 
