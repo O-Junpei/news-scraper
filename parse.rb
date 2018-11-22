@@ -33,11 +33,13 @@ def parser(name)
 
   # Parse RSS
   rss.channel.items.each do |item|
+    puts item
     date = item.pubDate.to_date
     article = {}
     article['title'] = item.title.to_s
     article['pubDate'] = date.strftime('%Y/%m/%d')
     article['link'] = item.link.to_s
+    article['description'] = item.description.to_s.gsub(/<(".*?"|'.*?'|[^'"])*?>/, '')
     contents.push(article)
   end
 
@@ -53,15 +55,13 @@ def parser(name)
   end
 
   # Export CSV
-  #csv = CSV.open('test.csv', 'w')
-  # contents.each do |content|
-    #csv.puts content['pubDate'] + ',' + content['title'] + ',' + content['link']
-  #end
-  #csv.close
-
-  CSV.open(csv_name,'w') do |csv| # output to csv file
+  CSV.open(csv_name, 'w') do |csv| # output to csv file
     contents.each do |content|
-      csv << [content['pubDate'], content['title'], content['link'] ]
+      csv << [
+          content['pubDate'],
+          content['title'],
+          content['link'],
+          content['description']]
     end
   end
 
