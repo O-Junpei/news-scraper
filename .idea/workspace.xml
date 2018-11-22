@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45eabf04-233b-49f2-ac5f-abeceaf463f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/aaa" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/companies.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parse.rb" beforeDir="false" afterPath="$PROJECT_DIR$/parse.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/三井物産.csv" beforeDir="false" afterPath="$PROJECT_DIR$/三井物産.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/三井物産.json" beforeDir="false" afterPath="$PROJECT_DIR$/三井物産.json" afterDir="false" />
     </list>
@@ -27,39 +26,39 @@
           <entry key="Gemfile" value="1" />
           <entry key="aaa" value="2" />
           <entry key="csv" value="2" />
-          <entry key="json" value="2" />
+          <entry key="json" value="3" />
           <entry key="lock" value="1" />
           <entry key="rb" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="2" />
+          <entry key="JSON" value="3" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="Ruby" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="json" value="14" />
-          <entry key="rb" value="2321" />
+          <entry key="json" value="39" />
+          <entry key="rb" value="2387" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="14" />
-          <entry key="Ruby" value="2321" />
+          <entry key="JSON" value="39" />
+          <entry key="Ruby" value="2387" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parse.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="41" column="86" selection-start-line="41" selection-start-column="86" selection-end-line="41" selection-end-column="86" />
+            <state relative-caret-position="305">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -67,17 +66,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/三井物産.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state>
+              <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="80" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/companies.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/三井物産.json">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="2" selection-start-column="2" selection-end-column="2" />
+              <caret column="4547" lean-forward="true" selection-start-column="4547" selection-end-column="4547" />
             </state>
           </provider>
         </entry>
@@ -111,6 +119,7 @@
     <findStrings>
       <find>.year</find>
       <find>タイでガス火力に出資</find>
+      <find>puts</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -122,8 +131,9 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/mitsui.json" />
         <option value="$PROJECT_DIR$/aaa" />
-        <option value="$PROJECT_DIR$/parse.rb" />
         <option value="$PROJECT_DIR$/三井物産.json" />
+        <option value="$PROJECT_DIR$/companies.json" />
+        <option value="$PROJECT_DIR$/parse.rb" />
       </list>
     </option>
   </component>
@@ -133,8 +143,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="2560" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1276" />
     <option name="height" value="1440" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -187,12 +197,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542863102863</updated>
-      <workItem from="1542863104690" duration="15831000" />
+      <workItem from="1542863104690" duration="16185000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15831000" />
+    <option name="totallyTimeSpent" value="16185000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -204,16 +214,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
+    <frame x="0" y="0" width="2560" height="1440" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.13463067" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13463067" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.6993646" weight="0.27611396" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.6993646" visible="true" weight="0.27611396" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.30063543" side_tool="true" weight="0.27611396" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -273,6 +283,23 @@
     <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/三井物産.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/三井物産.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4547" lean-forward="true" selection-start-column="4547" selection-end-column="4547" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -280,27 +307,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/三井物産.csv">
+    <entry file="file://$PROJECT_DIR$/companies.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="60">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parse.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="41" column="86" selection-start-line="41" selection-start-column="86" selection-end-line="41" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/三井物産.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        <state relative-caret-position="305">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>

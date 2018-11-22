@@ -33,7 +33,6 @@ def parser(name)
 
   # Parse RSS
   rss.channel.items.each do |item|
-    puts item
     date = item.pubDate.to_date
     article = {}
     article['title'] = item.title.to_s
@@ -67,6 +66,13 @@ def parser(name)
 
 end
 
-parser('三井物産')
+companies = open('companies.json') do |io|
+  JSON.load(io)
+end
+
+companies.each do |company|
+  parser(company)
+end
+
 
 
