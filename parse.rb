@@ -66,6 +66,7 @@ def parser(name)
 
 end
 
+## ParseStart
 companies = open('companies.json') do |io|
   JSON.load(io)
 end
