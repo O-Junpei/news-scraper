@@ -7,8 +7,8 @@ require 'time'
 require 'csv'
 
 def parser(name)
-  json_name = name + '.json'
-  csv_name = name + '.csv'
+  json_name = 'json/' + name + '.json'
+  csv_name = 'csv/' + name + '.csv'
   url = 'https://news.google.com/news/rss/search/section/q/' + URI.escape(name) + '?&ned=jp&gl=JP&hl=ja'
 
   # Pull
@@ -21,7 +21,7 @@ def parser(name)
 
   # File Check
   unless File.exist?(json_name)
-    open(name + '.json', 'w') do |io|
+    open(json_name, 'w') do |io|
       JSON.dump([], io)
     end
   end
