@@ -63,7 +63,6 @@ def parser(name)
           content['description']]
     end
   end
-
 end
 
 ## ParseStart
@@ -74,6 +73,3 @@ end
 companies.each do |company|
   parser(company)
 end
-
-
-
