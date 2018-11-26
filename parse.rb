@@ -48,7 +48,10 @@ def parser(name)
   # Sort
   contents = contents.sort_by {|h| h['pubDate']}.reverse
 
-  # Save
+  # Export
+  contents = contents.first(100) if contents.length > 100
+
+  # Export CSV
   open(json_name, 'w') do |io|
     JSON.dump(contents, io)
   end
