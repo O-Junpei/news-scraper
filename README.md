@@ -2,8 +2,9 @@
 ```
 $ mkdir csv
 $ mkdir json
+$ bundle install
 ```
 
 ```
-$ bundle install
+$ ruby parse.rb
 ```
